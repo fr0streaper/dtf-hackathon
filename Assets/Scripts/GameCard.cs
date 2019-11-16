@@ -21,7 +21,7 @@ public abstract class GameCard
     public GameCard(string id)
     {
         ID = id;
-        xCard.Load("./CardCollection.xml");
+        xCard.Load("CardCollection.xml");
         XmlElement xRoot = xCard.DocumentElement;
         string xPath = "card[@id='" + ID + "']";
         curCard = xRoot.SelectSingleNode(xPath);
