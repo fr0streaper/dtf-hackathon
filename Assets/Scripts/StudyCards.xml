@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cards>
+  <card id="0">
+    <type>green</type>
+    <text>Hello, my dear friend!</text>
+    <accept p1="0" p2="0" p3="0">Hello!</accept>
+    <decline p1="0" p2="0" p3="0">Hello!</decline>
+  </card>
+  <card id="1">
+    <type>green</type>
+    <text>Every card affects your stats. Some of them will send you to a foray. Good luck!</text>
+    <accept p1="" p2="" p3="">Got it!</accept>
+    <decline p1="" p2="" p3="">Got it!</decline>
+  </card>
+</cards>
