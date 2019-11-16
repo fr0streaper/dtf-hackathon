@@ -6,37 +6,22 @@ public class PlayerMovementController2D : MonoBehaviour
 {
     public EntityMovementController2D movementController;
     public float speedX = 10f;
-    public float jumpStartingSpeed = 40f;
-    public float jumpSpeedLoss = 1e-07f;
+    public float jumpForce = 15f;
     public float speedBoost = 20f;
 
     private Vector2 speed = Vector2.zero;
     private bool jump = false;
+    private Rigidbody2D rigidBody;
 
-    IEnumerator JumpCoroutine()
+    private void Start()
     {
-        float targetSpeedY = 0f;
-        speed.y = jumpStartingSpeed;
-
-        yield return new WaitForFixedUpdate();
-        while (Mathf.Abs(speed.y - targetSpeedY) > 0.05f)
-        {
-            speed.y = Mathf.Lerp(speed.y, targetSpeedY, jumpSpeedLoss);
-
-            if (movementController.isAgainstCeiling)
-            {
-                break;
-            }
-
-            yield return new WaitForFixedUpdate();
-        }
-
-        speed.y = 0;
+        rigidBody = GetComponent<Rigidbody2D>();
+        Physics2D.IgnoreLayerCollision(8, 9);
     }
 
     void Update()
     {
-        speed.x = Input.GetAxisRaw("Horizontal") * speedX;
+        speed.x = Input.GetAxisRaw("Horizontal") * speedX * speedBoost;
 
         if (Input.GetButtonDown("Jump"))
         {
@@ -49,9 +34,9 @@ public class PlayerMovementController2D : MonoBehaviour
         if (jump && movementController.isOnGround)
         {
             jump = false;
-            StartCoroutine(JumpCoroutine());
+            rigidBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
         }
 
-        movementController.Move(speed * Time.fixedDeltaTime * speedBoost);
+        movementController.Move(speed * Time.fixedDeltaTime, false, true);
     }
 }
