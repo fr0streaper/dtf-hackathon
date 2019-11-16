@@ -5,6 +5,7 @@ using System.Xml;
 
 public class UsualGameCard : GameCard
 {
+    public UsualGameCard(string id) : base(id) { }
     public void Accept(GameController g)
     {
         int[] p = {System.Int32.Parse(curCard.SelectSingleNode("accept").Attributes.GetNamedItem("p1").Value),

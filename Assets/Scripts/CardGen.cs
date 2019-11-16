@@ -15,9 +15,9 @@ public class CardGen
     List<string>[] M = new List<string>[3];
     List<string>[] F = new List<string>[3];*/
 
-    List<string> allID;
+    List<string> allID = new List<string>();
 
-    Dictionary<string, int> uId;
+    Dictionary<string, int> uId = new Dictionary<string, int>();
 
     string prevcard = "101110111";
 
