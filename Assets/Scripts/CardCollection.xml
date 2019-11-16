@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cards>
+  <card id="10100">
+    <type>green</type>
+    <text>"You've met spooky scary skeleton"</text>
+    <accept p1="0" p2="0" p3="100">"Understood him"</accept>
+    <decline p1="0" p2="0" p3="-10">"Misunderstood him"</decline>
+    <descriptor>001120110</descriptor>
+  </card>
+
+</cards>

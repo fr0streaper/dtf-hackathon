@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cards>
+  <card>
+    <type>green</type>
+    <text>Hello, my dear friend!</text>
+    <accept p1="0" p2="0" p3="0">Hello!</accept>
+    <decline p1="0" p2="0" p3="0">Hello!</decline>
+  </card>
+</cards>
