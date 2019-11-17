@@ -8,6 +8,15 @@ public class WalkingEnemyController2D : MonoBehaviour
     public float speedX = 2f;
     public float speedBoost = 1f;
 
+    [System.NonSerialized] public bool isAggressive = false;
+
+    private Transform player;
+
+    private void Start()
+    {
+        player = GameObject.FindWithTag("Player").transform; 
+    }
+
     void Update()
     {
         if (movementController.isAgainstWall || movementController.isOnEdge)
@@ -18,6 +27,9 @@ public class WalkingEnemyController2D : MonoBehaviour
 
     private void FixedUpdate()
     {
-        movementController.Move(new Vector2(speedX, 0f) * speedBoost);
+        if (!isAggressive)
+        {
+            movementController.Move(new Vector2(speedX, 0f) * speedBoost);
+        }
     }
 }

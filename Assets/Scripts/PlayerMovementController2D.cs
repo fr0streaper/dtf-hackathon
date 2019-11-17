@@ -6,7 +6,7 @@ public class PlayerMovementController2D : MonoBehaviour
 {
     public EntityMovementController2D movementController;
     public float speedX = 10f;
-    public float jumpForce = 15f;
+    public float jumpForce = 20f;
     public float speedBoost = 20f;
 
     private Vector2 speed = Vector2.zero;

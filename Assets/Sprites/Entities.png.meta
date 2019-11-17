@@ -8,6 +8,27 @@ TextureImporter:
   - first:
       213: -301484016269750036
     second: Entities_1
+  - first:
+      213: 8117940206064190248
+    second: Entities_2
+  - first:
+      213: -4677481587220610807
+    second: Entities_3
+  - first:
+      213: -8340503183124003493
+    second: Entities_4
+  - first:
+      213: -481725979218476725
+    second: Entities_5
+  - first:
+      213: -1755259743442402467
+    second: Entities_6
+  - first:
+      213: 9216411687222656550
+    second: Entities_7
+  - first:
+      213: 5409446653382896568
+    second: Entities_8
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -106,7 +127,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93b282b3c5ee59a448aceeeac3e3fd25
+      spriteID: 02e1497616bb6844b88b09fdeb79545a
       internalID: 4941530758645526566
       vertices: []
       indices: 
@@ -127,8 +148,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91ed6c7443257cc4ea82b9fc39508555
+      spriteID: a8c18730356f94f449e21a5c020a4dc5
       internalID: -301484016269750036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Entities_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5612354ef82d3c478219e2d41287408
+      internalID: 8117940206064190248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Entities_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4335d7bd00c8244a44e558dccafc38
+      internalID: -4677481587220610807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Entities_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8290ed987e7ac3a4d98dccf0e929d3c6
+      internalID: -8340503183124003493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Entities_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e07843fd60473dc4095eb5f964ab947f
+      internalID: -481725979218476725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Entities_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6479ae61aa9b19444938f608affb27ea
+      internalID: -1755259743442402467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Entities_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1687823645d5594c8250a6de0dc972e
+      internalID: 9216411687222656550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Entities_8
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b70d83c7d4c7abe46ba18c5139680f63
+      internalID: 5409446653382896568
       vertices: []
       indices: 
       edges: []
