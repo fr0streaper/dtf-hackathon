@@ -8,7 +8,7 @@ public class WeaponController : MonoBehaviour
     public GameObject Rifle;
     public GameObject Granades;
 
-    private Weapon weapon;
+    [System.NonSerialized] public Weapon weapon;
     private void Start()
     {
         XmlDocument xDoc = new XmlDocument();
