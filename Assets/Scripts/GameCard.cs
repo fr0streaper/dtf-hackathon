@@ -7,8 +7,11 @@ public abstract class GameCard
 {
     private XmlDocument xCard = new XmlDocument();
     protected XmlNode curCard;
-    public string ID = "01111";
+    public string ID;
 
+    public ScenesController SceneContr;
+
+    public int numberOfDungeons = 0;
 
     public int Type { get; private set; }
 
@@ -18,10 +21,10 @@ public abstract class GameCard
     public string AcceptText { get; private set; }
     public string DeclineText { get; private set; }
 
-    public GameCard(string id)
+    public GameCard(string id, string filename = "CardCollection")
     {
         ID = id;
-        xCard.Load("CardCollection.xml");
+        xCard.Load("Assets/Scripts/" + filename+ ".xml");
         XmlElement xRoot = xCard.DocumentElement;
         string xPath = "card[@id='" + ID + "']";
         curCard = xRoot.SelectSingleNode(xPath);
@@ -43,6 +46,12 @@ public abstract class GameCard
                 break;
         }
     }
+
+    public abstract void Accept(GameController g);
+
+
+    public abstract void Decline(GameController g);
+
 
 }
 

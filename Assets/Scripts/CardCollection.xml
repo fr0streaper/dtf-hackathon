@@ -10,8 +10,8 @@
   <card id="10101">
     <type>orange</type>
     <text>Simple test card</text>
-    <accept p1="100" p2="100" p3="100">Yes</accept>
-    <decline p1="-100" p2="-100" p3="-100">No</decline>
+    <accept p1="10" p2="10" p3="10">Yes</accept>
+    <decline p1="-10" p2="-10" p3="-10">No</decline>
     <descriptor>102220000</descriptor>
   </card>
   <card id="10102">

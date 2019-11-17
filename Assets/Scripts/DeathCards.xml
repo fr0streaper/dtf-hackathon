@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cards>
+  <card id="10">
+    <type>red</type>
+    <text>You lost you anonymity!</text>
+    <accept p1="0" p2="0" p3="0">"Oh no..."</accept>
+    <decline p1="0" p2="0" p3="0">"Oh no..."</decline>
+    <descriptor>201110111</descriptor>
+  </card>
+  <card id="11">
+    <type>red</type>
+    <text>You didn’t have enough money for food. But if you were listening to your parents...</text>
+    <accept p1="0" p2="0" p3="0">Ok, boomer</accept>
+    <decline p1="0" p2="0" p3="0">Ok, boomer</decline>
+    <descriptor>201110111</descriptor>
+  </card>
+  <card id="12">
+    <type>red</type>
+    <text>You are in a deep depression</text>
+    <accept p1="0" p2="0" p3="0">Oh no...</accept>
+    <decline p1="0" p2="0" p3="0">Oh no...</decline>
+    <descriptor>201110111</descriptor>
+  </card>
+</cards>

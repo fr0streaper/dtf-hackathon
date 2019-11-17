@@ -19,7 +19,7 @@ public class CardGen
 
     public CardGen()
     {
-        xDoc.Load("CardCollection.xml");
+        xDoc.Load("Assets/Scripts/CardCollection.xml");
         xRoot = xDoc.DocumentElement;
         cardsAtAll = (uint)xRoot.ChildNodes.Count;
         foreach (XmlNode h in xRoot.ChildNodes)
@@ -40,7 +40,7 @@ public class CardGen
         if (b != d) return true;
         return false;
     }
-    public string getNextCard()
+    public GameCard getNextCard()
     {
 
         int rej = -1;
@@ -87,6 +87,11 @@ public class CardGen
 
         uId[ans]++;
         prevcard = cD;
-        return ans;
+
+        if (cD[1] == '0' && cD[5] == '0')
+        {
+            return new UsualGameCard(ans, "CardCollection");
+        }
+        else return new DungeGameCard(ans, "CardCollection", cD[1] - '0', cD[5] - '0');
     }
 }
