@@ -17,6 +17,9 @@ public class PlayerMovementController2D : MonoBehaviour
     {
         rigidBody = GetComponent<Rigidbody2D>();
         Physics2D.IgnoreLayerCollision(8, 9);
+        Physics2D.IgnoreLayerCollision(8, 8);
+        Physics2D.IgnoreLayerCollision(8, 12);
+        Physics2D.IgnoreLayerCollision(9, 11);
     }
 
     void Update()

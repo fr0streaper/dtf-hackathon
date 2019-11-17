@@ -12,8 +12,15 @@ public class FlyingEnemyController2D : MonoBehaviour
 
     private Transform player;
 
+    void Die()
+    {
+        movementController.enabled = false;
+        this.enabled = false;
+    }    
+
     private void Start()
     {
+        movementController = GetComponent<EntityMovementController2D>();
         player = GameObject.FindWithTag("Player").transform;
     }
 

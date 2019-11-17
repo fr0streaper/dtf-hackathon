@@ -10,8 +10,12 @@ public class WalkingEnemyController2D : MonoBehaviour
 
     [System.NonSerialized] public bool isAggressive = false;
 
-    private Transform player;
-
+    public Transform player;
+    void Die()
+    {
+        movementController.enabled = false;
+        this.enabled = false;
+    }
     private void Start()
     {
         player = GameObject.FindWithTag("Player").transform; 

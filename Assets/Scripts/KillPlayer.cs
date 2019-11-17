@@ -10,7 +10,7 @@ public class KillPlayer : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            SendMessage("PlayerDead");
+            collision.SendMessage("ApplyDamage", 10);
             AudioSource.PlayClipAtPoint(audio, collision.gameObject.transform.position);
         }
     }
