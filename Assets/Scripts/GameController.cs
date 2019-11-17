@@ -41,8 +41,6 @@ public class GameController : MonoBehaviour
     public void Start()
     {
         newCard();
-        refresh();
-        Debug.Log("refreshed");
 
         d.Load("Assets/Scripts/CardCollection.xml");
 
@@ -70,15 +68,15 @@ public class GameController : MonoBehaviour
         fPannel.GetComponent<Text>().text = xDoc.DocumentElement.SelectSingleNode("feelings").InnerText;
         if (xDoc.DocumentElement.SelectSingleNode("anonymity").InnerText == "0")
         {
-            aDeath();
+            Death("10");
         }
         else if (xDoc.DocumentElement.SelectSingleNode("money").InnerText == "0")
         {
-            mDeath();
+            Death("11");
         }
         else if (xDoc.DocumentElement.SelectSingleNode("feelings").InnerText == "0")
         {
-            fDeath();
+            Death("12");
         }
         else newCard();
     }
@@ -96,15 +94,15 @@ public class GameController : MonoBehaviour
         fPannel.GetComponent<Text>().text = xDoc.DocumentElement.SelectSingleNode("feelings").InnerText;
         if (xDoc.DocumentElement.SelectSingleNode("anonymity").InnerText == "0")
         {
-            aDeath();
+            Death("10");
         }
         else if (xDoc.DocumentElement.SelectSingleNode("money").InnerText == "0")
         {
-            mDeath();
+            Death("11");
         }
         else if (xDoc.DocumentElement.SelectSingleNode("feelings").InnerText == "0")
         {
-            fDeath();
+            Death("12");
         }
         else newCard();
     }
@@ -115,9 +113,7 @@ public class GameController : MonoBehaviour
         Anonymity = System.Int32.Parse(xDoc.DocumentElement.SelectSingleNode("anonymity").InnerText);
         Money = System.Int32.Parse(xDoc.DocumentElement.SelectSingleNode("money").InnerText);
         Feelings = System.Int32.Parse(xDoc.DocumentElement.SelectSingleNode("feelings").InnerText);
-        tCard.GetComponent<Text>().text = curCard.CardText;
-        tAcc.GetComponent<Text>().text = curCard.AcceptText;
-        tDec.GetComponent<Text>().text = curCard.DeclineText;
+        tRefr();
         string hhh = "";
         for (int i = 0; i < flags.Length; i++)
         {
@@ -126,31 +122,18 @@ public class GameController : MonoBehaviour
         Debug.Log(hhh);
     }
 
-    public void aDeath()
+    public void Death(string ind)
     {
-        curCard = new DungeGameCard("10", "DeathCards", 2, 2);
-        tCard.GetComponent<Text>().text = curCard.CardText;
-        tAcc.GetComponent<Text>().text = curCard.AcceptText;
-        tDec.GetComponent<Text>().text = curCard.DeclineText;
+        curCard = new DungeGameCard(ind, "DeathCards", 2, 2);
+        tRefr();
         refresh();
     }
 
-    public void mDeath()
+    void tRefr()
     {
-        curCard = new DungeGameCard("11", "DeathCards", 2, 2);
         tCard.GetComponent<Text>().text = curCard.CardText;
         tAcc.GetComponent<Text>().text = curCard.AcceptText;
         tDec.GetComponent<Text>().text = curCard.DeclineText;
-        refresh();
-    }
-
-    public void fDeath()
-    {
-        curCard = new DungeGameCard("12", "DeathCards", 2, 2);
-        tCard.GetComponent<Text>().text = curCard.CardText;
-        tAcc.GetComponent<Text>().text = curCard.AcceptText;
-        tDec.GetComponent<Text>().text = curCard.DeclineText;
-        refresh();
     }
     void refresh()
     {
