@@ -15,7 +15,7 @@ class DungeGameCard : GameCard
 
     public override void Accept(GameController g)
     {
-        g.isDangOrDeathCard = true;
+        
         if (aD != 2) g.flags[System.Int32.Parse(ID) - 10100] = true;
         sDoc.Load("Assets/Scripts/StatSaver.xml");
         int[] p = {System.Int32.Parse(curCard.SelectSingleNode("accept").Attributes.GetNamedItem("p1").Value),
@@ -30,6 +30,7 @@ class DungeGameCard : GameCard
 
         if (aD == 1)
         {
+            g.isDangOrDeathCard = true;
             refrX();
             sDoc.Load("Assets/Scripts/StatSaver.xml");
             sDoc.DocumentElement.SelectSingleNode("flagssaved").InnerText = "1";
@@ -38,6 +39,7 @@ class DungeGameCard : GameCard
         }
         if  (aD == 2)
         {
+            g.isDangOrDeathCard = true;
             SceneContr.FadeOutTo(0);
         }
         
@@ -45,6 +47,7 @@ class DungeGameCard : GameCard
 
     public override void Decline(GameController g)
     {
+
         sDoc.Load("Assets/Scripts/StatSaver.xml");
         int[] p = {System.Int32.Parse(curCard.SelectSingleNode("decline").Attributes.GetNamedItem("p1").Value),
             System.Int32.Parse(curCard.SelectSingleNode("decline").Attributes.GetNamedItem("p2").Value),
@@ -57,11 +60,16 @@ class DungeGameCard : GameCard
         sDoc.Save("Assets/Scripts/StatSaver.xml");
         if (dD == 1)
         {
+            g.isDangOrDeathCard = true;
             refrX();
+            sDoc.Load("Assets/Scripts/StatSaver.xml");
+            sDoc.DocumentElement.SelectSingleNode("flagssaved").InnerText = "1";
+            sDoc.Save("Assets/Scripts/StatSaver.xml");
             SceneContr.FadeOutTo(x);
         }
         if (dD == 2)
         {
+            g.isDangOrDeathCard = true;
             SceneContr.FadeOutTo(0);
         }
     }
