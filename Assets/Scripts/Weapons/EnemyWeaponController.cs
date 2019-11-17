@@ -25,7 +25,7 @@ public class EnemyWeaponController : MonoBehaviour
     }
     void Update()
     {
-        weapon.transform.position = transform.position + Vector3.up * 0.5f;
+        weapon.transform.position = transform.position + Vector3.up * 0.25f;
         if(GetComponent<WalkingEnemyController2D>().isAggressive &&
             GetComponent<WalkingEnemyController2D>().player)
         {

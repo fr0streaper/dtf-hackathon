@@ -9,9 +9,9 @@
   </card>
   <card id="10101">
     <type>orange</type>
-    <text>Simple test card</text>
-    <accept p1="10" p2="10" p3="10">Yes</accept>
-    <decline p1="-10" p2="-10" p3="-10">No</decline>
+    <text>Simple text</text>
+    <accept p1="+10" p2="-10" p3="+10">that's a bruh moment</accept>
+    <decline p1="-10" p2="+10" p3="-10">somebody once told me</decline>
     <descriptor>102220000</descriptor>
   </card>
   <card id="10102">
@@ -27,5 +27,215 @@
     <accept p1="-10" p2="0" p3="5">Okey</accept>
     <decline p1="0" p2="0" p3="0">Nope</decline>
     <descriptor>110120111</descriptor>
+  </card>
+  <card id="10104">
+    <type>red</type>
+    <text>Son, I've been telling you this this whole day - get off the computer or no allowance next month!</text>
+    <accept p1="0" p2="+10" p3="-20">Alright, I get it, mom</accept>
+    <decline p1="0" p2="-10" p3="+5">ok boomer</decline>
+    <descriptor>201200102</descriptor>
+  </card>
+  <card id="10105">
+    <type>green</type>
+    <text>Let's play some Fortdey with the guys!</text>
+    <accept p1="-5" p2="0" p3="+10">Ya let's get this bread</accept>
+    <decline p1="0" p2="0" p3="-10">Sorry guys not feeling it </decline>
+    <descriptor>000120110</descriptor>
+  </card>
+  <card id="10106">
+    <type>orange</type>
+    <text>Psst, wanna get some quick cash? There's a datacenter nearby, I can get a key, but I need some extra hands</text>
+    <accept p1="-5" p2="+20" p3="+5">Aight mate</accept>
+    <decline p1="0" p2="0" p3="-5">Nah, don't wanna mess with the police</decline>
+    <descriptor>110220110</descriptor>
+  </card>
+  <card id="10107">
+    <type>red</type>
+    <text>Oi, got any money to spare for a brother in need? Just in case, this knife is asking as well</text>
+    <accept p1="0" p2="-15" p3="-10">Woah easy there, here's the cash</accept>
+    <decline p1="0" p2="0" p3="+10">Sugondese nuts</decline>
+    <descriptor>201001112</descriptor>
+  </card>
+  <card id="10108">
+    <type>orange</type>
+    <text>Our company offers arm prosthetics with a discount only for today! Come to this address and upgrade your experience!</text>
+    <accept p1="0" p2="-40" p3="+30">Hell yeah, cyberpunk is the best!</accept>
+    <decline p1="0" p2="0" p3="-5">I never asked for this</decline>
+    <descriptor>101100110</descriptor>
+  </card>
+  <card id="10109">
+    <type>orange</type>
+    <text>cHeEkYbUmBoNeE</text>
+    <accept p1="+15" p2="+5" p3="-5">c h e e k y b u m b o n e e</accept>
+    <decline p1="+15" p2="-5" p3="+5">e e n o b m u b y k e e h c</decline>
+    <descriptor>102200202</descriptor>
+  </card>
+  <card id="10110">
+    <type>green</type>
+    <text>Bro, check out my new mixtape on Noisecloud!</text>
+    <accept p1="+10" p2="0" p3="-10">Those are some dope beats dude</accept>
+    <decline p1="0" p2="0" p3="+15">No thanks, I prefer lofi hip hop radio - beats to relax/study to</decline>
+    <descriptor>002100112</descriptor>
+  </card>
+  <card id="10111">
+    <type>orange</type>
+    <text>Do you mind participating in this little social experiment? This will only take 5 minutes</text>
+    <accept p1="-20" p2="+5" p3="+5">Drake approve</accept>
+    <decline p1="+10" p2="0" p3="-5">Drake disapprove</decline>
+    <descriptor>110220210</descriptor>
+  </card>
+  <card id="10112">
+    <type>red</type>
+    <text>[A gun is pointed at your head] DO YOU LIKE OLD MEMES??!</text>
+    <accept p1="-10" p2="0" p3="-5">ME GUSTA</accept>
+    <decline p1="0" p2="+10" p3="+5">Old memes, what's next? Gonna send one to me via infrared port, gramps?</decline>
+    <descriptor>200121101</descriptor>
+  </card>
+  <card id="10113">
+    <type>green</type>
+    <text>hey, an0n1337, Big Brother's account data was updated recently, you might wanna change your pass</text>
+    <accept p1="+30" p2="-10" p3="+10">yo thanks mate</accept>
+    <decline p1="-15" p2="0" p3="+5">they can't even block a messenger properly, don't even joke about it</decline>
+    <descriptor>002020012</descriptor>
+  </card>
+  <card id="10114">
+    <type>green</type>
+    <text>[You meet a cute dog]</text>
+    <accept p1="0" p2="0" p3="+50">uwu who's the guwud boi</accept>
+    <decline p1="-100" p2="-100" p3="-100">ew dogs</decline>
+    <descriptor>001121000</descriptor>
+  </card>
+  <card id="10115">
+    <type>green</type>
+    <text>Hey mate, did you hydrate today? You better do, it's good for your health</text>
+    <accept p1="-5" p2="0" p3="+10">Oh shoot, that's right, thanks, brb</accept>
+    <decline p1="0" p2="0" p3="+5">[Sarcasm]</decline>
+    <descriptor>000120112</descriptor>
+  </card>
+  <card id="10116">
+    <type>red</type>
+    <text>zxc 1v1 esli ne pozer</text>
+    <accept p1="-20" p2="0" p3="+10">ti v mute ya dead inside</accept>
+    <decline p1="0" p2="0" p3="0">You do this one more time and I'm calling your mom</decline>
+    <descriptor>210120111</descriptor>
+  </card>
+  <card id="10117">
+    <type>green</type>
+    <text>you want anything from mcdondald?</text>
+    <accept p1="0" p2="-10" p3="+15">borgar</accept>
+    <decline p1="0" p2="-5" p3="-5">Sorry, I'm having a smoothie</decline>
+    <descriptor>001020100</descriptor>
+  </card>
+  <card id="10118">
+    <type>orange</type>
+    <text>How are you liking the cyberpunk era so far?</text>
+    <accept p1="+5" p2="0" p3="+5">Pretty nice</accept>
+    <decline p1="-5" p2="0" p3="+10">we live in a society</decline>
+    <descriptor>102120012</descriptor>
+  </card>
+  <card id="10119">
+    <type>orange</type>
+    <text>Are we number one?</text>
+    <accept p1="0" p2="0" p3="+10">[Muffled trumpet sounds]</accept>
+    <decline p1="0" p2="0" p3="-10">No, actually...</decline>
+    <descriptor>111120110</descriptor>
+  </card>
+  <card id="10120">
+    <type>red</type>
+    <text>What level of post-irony are you on?</text>
+    <accept p1="+5" p2="0" p3="-5">bottom text</accept>
+    <decline p1="-5" p2="0" p3="+5">Very high</decline>
+    <descriptor>02100012</descriptor>
+  </card>
+  <card id="10121">
+    <type>orange</type>
+    <text>Why do I try so hard to plug so much memes in here?</text>
+    <accept p1="+10" p2="-5" p3="-5">I wouldn't get it</accept>
+    <decline p1="0" p2="0" p3="+5">No other ideas for content</decline>
+    <descriptor>12000112</descriptor>
+  </card>
+  <card id="10122">
+    <type>green</type>
+    <text>Do you like your life, comrade?</text>
+    <accept p1="+15" p2="0" p3="-5">OUR life, comrade</accept>
+    <decline p1="-15" p2="0" p3="+30">Better dead than red</decline>
+    <descriptor>002101012</descriptor>
+  </card>
+  <card id="10123">
+    <type>red</type>
+    <text>THAT'S A LOTTA DAMAGE? WHAT WILL YOU DO?</text>
+    <accept p1="0" p2="-5" p3="+5">Use FlexTape, duh</accept>
+    <decline p1="0" p2="0" p3="0">Guess I'll die</decline>
+    <descriptor>01021111</descriptor>
+  </card>
+  <card id="10124">
+    <type>red</type>
+    <text>Will you be worse?</text>
+    <accept p1="0" p2="-20" p3="+40">RIP AND TEAR</accept>
+    <decline p1="-10" p2="-10" p3="0">I wonder what you're talking about</decline>
+    <descriptor>211020001</descriptor>
+  </card>
+  <card id="10125">
+    <type>red</type>
+    <text>[A wild gopnik appears!] cheeki breeki</text>
+    <accept p1="0" p2="-10" p3="+10">[Crouch]</accept>
+    <decline p1="0" p2="+10" p3="+10">[Pull out broken bottle]</decline>
+    <descriptor>201021122</descriptor>
+  </card>
+  <card id="10126">
+    <type>red</type>
+    <text>[Despacito playing in the background; There is no escape]</text>
+    <accept p1="-10" p2="-10" p3="-10">ugh</accept>
+    <decline p1="-10" p2="-10" p3="-10">ugh</decline>
+    <descriptor>200000000</descriptor>
+  </card>
+  <card id="10127">
+    <type>green</type>
+    <text>Hey bro, u mom gey</text>
+    <accept p1="-5" p2="0" p3="+15">no u</accept>
+    <decline p1="0" p2="0" p3="-5">oh no</decline>
+    <descriptor>010120110</descriptor>
+  </card>
+  <card id="10128">
+    <type>green</type>
+    <text>I've been bored lately, have any anime recommendations?</text>
+    <accept p1="0" p2="+10" p3="+10">Naruto</accept>
+    <decline p1="-5" p2="-5" p3="-5">Sword Art Online</decline>
+    <descriptor>001220000</descriptor>
+  </card>
+  <card id="10129">
+    <type>green</type>
+    <text>Hey, want to hang out at that restaraunt next weekend?</text>
+    <accept p1="0" p2="-10" p3="+10">Finally, some good hecking food</accept>
+    <decline p1="+5" p2="0" p3="-5">It's hecking raw</decline>
+    <descriptor>001020210</descriptor>
+  </card>
+  <card id="10130">
+    <type>orange</type>
+    <text>Honey, will you ever give me up?</text>
+    <accept p1="0" p2="-5" p3="+10">Never gonna let you down</accept>
+    <decline p1="0" p2="+5" p3="0">I'll think about it</decline>
+    <descriptor>101021121</descriptor>
+  </card>
+  <card id="10131">
+    <type>green</type>
+    <text>Hey, whatcha listen' to?</text>
+    <accept p1="+10" p2="0" p3="+10">Darude - Sandstorm</accept>
+    <decline p1="+20" p2="0" p3="-15">Oh, didn't you hear? There's this new song from Justin Biebe--</decline>
+    <descriptor>012121210</descriptor>
+  </card>
+  <card id="10132">
+    <type>red</type>
+    <text>Excuse me, sir, you are arrested on suspicion of committing financial machinations</text>
+    <accept p1="-50" p2="-20" p3="-20">oh shoot [Submit]</accept>
+    <decline p1="-50" p2="0" p3="+5">say sike right now[Run]</decline>
+    <descriptor>200001012</descriptor>
+  </card>
+  <card id="10133">
+    <type>green</type>
+    <text>How is your No Nut November going? Answer honestly, or else</text>
+    <accept p1="-10" p2="0" p3="+30">Staying strong, bröther</accept>
+    <decline p1="+10" p2="0" p3="0">Actually, I didn't bother</decline>
+    <descriptor>000121211</descriptor>
   </card>
 </cards>

@@ -11,7 +11,7 @@ public class Weapon : MonoBehaviour
     public int ammo;
     public float reloadTime;
     public bool isReloading;
-    public Vector3 bulletForce;
+    public float bulletForce;
     public float dispersion;
 
 
@@ -34,11 +34,11 @@ public class Weapon : MonoBehaviour
             StartCoroutine(CooldownCoroutine());
             ammo--;
             GameObject new_bullet = Instantiate(bullet);
-            new_bullet.transform.position = transform.position + transform.rotation * Vector3.forward * 1f;
+            new_bullet.transform.position = transform.position + transform.rotation * Vector3.right * 0.5f;
             Quaternion rot = transform.rotation;
-            rot = Quaternion.AngleAxis(rot.eulerAngles.z + Random.Range(-dispersion, dispersion), new Vector3(0, 0, 1));
+            rot = Quaternion.AngleAxis(rot.eulerAngles.z + Random.Range(-dispersion, dispersion), Vector3.forward);
             new_bullet.transform.rotation = rot;
-            Vector2 force = rot * bulletForce;
+            Vector2 force = new_bullet.transform.right * bulletForce;
             new_bullet.GetComponent<Rigidbody2D>().AddForce(force);
         }
         else if (isReloading == false && ammo <= 0)

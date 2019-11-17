@@ -305,7 +305,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db70100808361c46bcb3867befb8e48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weap: {fileID: 5613877952870383320, guid: 988a4be617fe3a14eafd230e3afcee18, type: 3}
+  Rifle: {fileID: 4285016649563101635, guid: 13e2deff1d38e41479c4c949c1963f20, type: 3}
+  Granades: {fileID: 5613877952870383320, guid: 988a4be617fe3a14eafd230e3afcee18,
+    type: 3}
 --- !u!114 &272711852
 MonoBehaviour:
   m_ObjectHideFlags: 0

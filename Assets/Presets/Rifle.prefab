@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4285016649563101634}
   - component: {fileID: 255102538570156929}
   - component: {fileID: 1946935431564652110}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Rifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,14 +98,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 8906421598416857318, guid: ac7abcb151bdf0042b501400dc674fad, type: 3}
-  cooldownTime: 0.03
+  cooldownTime: 0.1
   isCoolingDown: 0
   maxAmmo: 30
   ammo: 30
   reloadTime: 2
   isReloading: 0
-  bulletForce: {x: 200, y: 0, z: 0}
-  dispersion: 1
+  bulletForce: 250
+  dispersion: 5
 --- !u!61 &255102538570156929
 BoxCollider2D:
   m_ObjectHideFlags: 0

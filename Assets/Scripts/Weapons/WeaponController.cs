@@ -1,24 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Xml;
 
 public class WeaponController : MonoBehaviour
 {
-    public GameObject weap;
+    public GameObject Rifle;
+    public GameObject Granades;
+
     private Weapon weapon;
     private void Start()
     {
-        weapon = Instantiate(weap).GetComponent<Weapon>();
+        XmlDocument xDoc = new XmlDocument();
+        xDoc.Load("Assets/Scripts/StatSaver.xml");
+        string flags = xDoc.DocumentElement.SelectSingleNode("feelings").InnerText;
+        if (flags[2]=='1')
+            weapon = Instantiate(Granades).GetComponent<Weapon>();
+        else
+            weapon = Instantiate(Rifle).GetComponent<Weapon>();
     }
     private void Update()
     {
-        weapon.transform.position = transform.position + Vector3.up * 0.5f;
+        weapon.transform.position = transform.position + Vector3.up * 1f;
+        Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        RotateTo(pos);
         if (Input.GetMouseButton(0))
         {
             weapon.Shoot();
         }
-        Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        RotateTo(pos);
     }
 
     private void RotateTo(Vector3 pos)

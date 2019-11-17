@@ -104,7 +104,7 @@ MonoBehaviour:
   ammo: 2
   reloadTime: 2
   isReloading: 0
-  bulletForce: {x: 400, y: 0, z: 0}
+  bulletForce: 400
   dispersion: 5
 --- !u!50 &-5752001630453018605
 Rigidbody2D:
