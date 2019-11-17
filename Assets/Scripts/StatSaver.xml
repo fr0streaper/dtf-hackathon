@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <stats>
-  <anonymity>100</anonymity>
-  <money>100</money>
-  <feelings>100</feelings>
+  <needrefr>0</needrefr>
+  <anonymity>50</anonymity>
+  <money>20</money>
+  <feelings>70</feelings>
+  <flagssaved>0</flagssaved>
+  <flags>0010</flags>
 </stats>
