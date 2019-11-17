@@ -13,7 +13,7 @@ public class WeaponController : MonoBehaviour
     {
         XmlDocument xDoc = new XmlDocument();
         xDoc.Load("Assets/Scripts/StatSaver.xml");
-        string flags = xDoc.DocumentElement.SelectSingleNode("feelings").InnerText;
+        string flags = xDoc.DocumentElement.SelectSingleNode("flags").InnerText;
         if (flags[2]=='1')
             weapon = Instantiate(Granades).GetComponent<Weapon>();
         else
