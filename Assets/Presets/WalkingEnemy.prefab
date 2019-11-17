@@ -123,8 +123,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: 8300000, guid: 6b21a642a62741743af4645cfb52ddcc, type: 3}
-  aggroScale: 3
-  aggroAlpha: 0.25
+  aggroScale: 10
+  aggroAlpha: 0.1
   aggroColor: {r: 175, g: 0, b: 0, a: 1}
   aggroSprite: {fileID: -7541180782008492872, guid: 6ab89a2ac87e40549b73e4037e21bd7e,
     type: 3}
@@ -314,6 +314,7 @@ GameObject:
   - component: {fileID: 832636354868945810}
   - component: {fileID: 832636354868945812}
   - component: {fileID: 5193499489698487283}
+  - component: {fileID: 1381273574}
   m_Layer: 9
   m_Name: WalkingEnemy
   m_TagString: Enemy
@@ -462,8 +463,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30d920bc8565b6f41b2b34e4d6917591, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RIP: {fileID: -481725979218476725, guid: 6ab89a2ac87e40549b73e4037e21bd7e, type: 3}
-  Health: 0
+  RIP: {fileID: 8955393778695006536, guid: f50c8dfd8b75418439d4cf5fc1edb2b7, type: 3}
+  YouDiedText: {fileID: 0}
+  Health: 10
 --- !u!114 &5193499489698487283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -479,3 +481,17 @@ MonoBehaviour:
   movementController: {fileID: 832636354868945810}
   speedX: 2
   speedBoost: 1
+  player: {fileID: 0}
+--- !u!114 &1381273574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832636354868945813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed97d07b98c26834f8d476c50a28a3d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weap: {fileID: 3334307577199461861, guid: d6e4d61cf740a89419be1fc3e4dc55a8, type: 3}

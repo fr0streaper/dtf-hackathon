@@ -34,7 +34,7 @@ public class Weapon : MonoBehaviour
             StartCoroutine(CooldownCoroutine());
             ammo--;
             GameObject new_bullet = Instantiate(bullet);
-            new_bullet.transform.position = transform.position + transform.rotation * Vector3.forward * 0.25f;
+            new_bullet.transform.position = transform.position + transform.rotation * Vector3.forward * 1f;
             Quaternion rot = transform.rotation;
             rot = Quaternion.AngleAxis(rot.eulerAngles.z + Random.Range(-dispersion, dispersion), new Vector3(0, 0, 1));
             new_bullet.transform.rotation = rot;

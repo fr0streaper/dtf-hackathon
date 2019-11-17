@@ -25,6 +25,7 @@ public class WalkingEnemyTriggerHandler : MonoBehaviour
         {
             GameObject enemy = transform.parent.gameObject;
             enemy.GetComponent<WalkingEnemyController2D>().isAggressive = true;
+            enemy.GetComponent<WalkingEnemyController2D>().player = collision.transform;
 
             idleSprite = enemy.GetComponent<SpriteRenderer>().sprite;
             enemy.GetComponent<SpriteRenderer>().sprite = aggroSprite;
@@ -38,6 +39,7 @@ public class WalkingEnemyTriggerHandler : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             GameObject enemy = transform.parent.gameObject;
+            enemy.GetComponent<WalkingEnemyController2D>().player = null;
             enemy.GetComponent<WalkingEnemyController2D>().isAggressive = false;
             enemy.GetComponent<SpriteRenderer>().sprite = idleSprite;
         }
