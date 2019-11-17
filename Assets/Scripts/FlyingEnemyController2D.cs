@@ -43,8 +43,11 @@ public class FlyingEnemyController2D : MonoBehaviour
         {
             movementController.Move(Vector2.zero);
 
-            Vector2 targetPoint = Vector2.MoveTowards(transform.position, player.position, chaseSpeed * Time.fixedDeltaTime * speedBoost);
-            movementController.MoveTo(targetPoint);
+            if(player)
+            { 
+                Vector2 targetPoint = Vector2.MoveTowards(transform.position, player.position, chaseSpeed * Time.fixedDeltaTime * speedBoost);
+                movementController.MoveTo(targetPoint);
+            }
         }
     }
 }
