@@ -15,7 +15,10 @@ public class UIController : MonoBehaviour
     }
     void Update()
     {
-        health.text = "Health - " + player.GetComponent<HealthController>().Health;
-        ammo.text = "Ammo - " + player.GetComponent<WeaponController>().weapon.ammo.ToString() + "\\" + player.GetComponent<WeaponController>().weapon.maxAmmo.ToString();
+        if(player)
+        { 
+         health.text = "Health - " + player.GetComponent<HealthController>().Health;
+         ammo.text = "Ammo - " + player.GetComponent<WeaponController>().weapon.ammo.ToString() + "\\" + player.GetComponent<WeaponController>().weapon.maxAmmo.ToString();
+        }
     }
 }
