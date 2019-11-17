@@ -15,6 +15,7 @@ class DungeGameCard : GameCard
 
     public override void Accept(GameController g)
     {
+        g.isDangOrDeathCard = true;
         if (aD != 2) g.flags[System.Int32.Parse(ID) - 10100] = true;
         sDoc.Load("Assets/Scripts/StatSaver.xml");
         int[] p = {System.Int32.Parse(curCard.SelectSingleNode("accept").Attributes.GetNamedItem("p1").Value),
@@ -25,15 +26,21 @@ class DungeGameCard : GameCard
         sDoc.DocumentElement.SelectSingleNode("feelings").InnerText = System.Math.Max(System.Math.Min(g.Feelings + p[2], 100), 0).ToString();
         sDoc.Save("Assets/Scripts/StatSaver.xml");
 
+        
+
         if (aD == 1)
         {
             refrX();
+            sDoc.Load("Assets/Scripts/StatSaver.xml");
+            sDoc.DocumentElement.SelectSingleNode("flagssaved").InnerText = "1";
+            sDoc.Save("Assets/Scripts/StatSaver.xml");
             SceneContr.FadeOutTo(x);
         }
         if  (aD == 2)
         {
             SceneContr.FadeOutTo(0);
         }
+        
     }
 
     public override void Decline(GameController g)
@@ -69,5 +76,7 @@ class DungeGameCard : GameCard
         }
         x = 2 + x % numberOfDungeons;
     }
+
+
 }
 
