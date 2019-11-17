@@ -82,6 +82,7 @@ class DungeGameCard : GameCard
             rg.GetBytes(rno);
             x = System.BitConverter.ToInt32(rno, 0);
         }
+        x = System.Math.Abs(x);
         x = 2 + x % numberOfDungeons;
     }
 
