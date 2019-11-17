@@ -21,4 +21,11 @@
     <decline p1="0" p2="0" p3="-20">I don't need it</decline>
     <descriptor>000020110</descriptor>
   </card>
+  <card id="10103">
+    <type>orange</type>
+    <text>Let's go for a walk, dude</text>
+    <accept p1="-10" p2="0" p3="5">Okey</accept>
+    <decline p1="0" p2="0" p3="0">Nope</decline>
+    <descriptor>110120111</descriptor>
+  </card>
 </cards>
